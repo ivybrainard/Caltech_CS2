@@ -1,0 +1,49 @@
+Code Snippet #1:
+    How many integer values were created in L1-L2? 1
+    How many Node values were created in L1-L2? 1
+    How many variables values were created in L1-L2? 2
+    How many fields were accessed in L1-L2? 1
+
+Code Snippet #2:
+    How many Node values were created in L3-L4? 1
+    After L4, there are three possible Node values for any Node reference:
+        (a) the Node with data 10
+        (b) the Node with data 100
+        (c) null
+    What is the letter corresponding to the value of the Node reference variable "first"? a
+    What is the letter corresponding to the value of the Node reference variable "temp"? c
+    What is the letter corresponding to the value of the next field of the Node with data 10? b
+    What is the letter corresponding to the value of the next field of the Node with data 100? c
+
+Code Snippet #3:
+    How many (non-null) Node values are reachable from variables after the snippet? 6
+    How many references (e.g., fields OR reference variables) point to null after the snippet? 2
+    Imagine the following lines appeared after the snippet:
+        > Node<Integer> save = first;
+        > first = new Node<>(100);
+        > first.next = save;
+    How many (non-null) Node values are reachable from variables after the snippet with these additional lines? 7
+    For the remainder of the lab, DO NOT ASSUME these additional lines were run.
+
+Code Snippet #4:
+    As we discussed in lecture, the "call stack" is a list of method calls where the most recent method call is at the top.
+    How many "stack frames" for addToEnd (not including the frame for main) are in the "call stack" at the **deepest** point in execution of this snippet? 7
+    How many references (variables or fields) are changed by the execution of code snippet #4? 0
+
+Code Snippet #5:
+    Throughout the snippets, we have created the following (non-null) Node values:
+        (a) a Node with data 10
+        (b) a Node with data 100
+        (c) a Node with data 200
+        (d) a Node with data 300
+        (e) a Node with data 400
+        (f) a Node with data 0
+    Recall that an object gets "garbage collected" by Java when it is not reachable from any remaining variable.
+    For each of the node values we created, either provide a Java expression *starting with a variable* to reach that value OR write "gced"
+    if it is no longer reachable:
+        (a)? first
+        (b)? first.next.next.next.next.next
+        (c)? first.next.next.next.next
+        (d)? first.next.next.next
+        (e)? first.next.next
+        (f)? gced
