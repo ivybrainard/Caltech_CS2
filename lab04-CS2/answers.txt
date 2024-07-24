@@ -1,0 +1,1 @@
+null|null|this.children = new HashMap<>();|public|private|void|2|0, 01|0,1|12,14|acc.remove(acc.size() - 1);|6AGKU|List<String>|if(bits.substring(0,1).equals("0"));|return nextCharacter(node.children.get(false), bits.substring(1));|return nextCharacter(node.children.get(true), bits.substring(1));|
