@@ -1,2 +1,0 @@
-Is it an animal? (y/n)? Does it have wheels? (y/n)? I guess that your object is bicycle!
-Am I right? (y/n)? Awesome! I win!
