@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Movie Autocomplete" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="edu.caltech.cs2.project04.Main" />
-    <module name="project04-autocomplete" />
-    <method v="2">
-      <option name="Make" enabled="true" />
-    </method>
-  </configuration>
-</component>
